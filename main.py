@@ -27,7 +27,7 @@ def makeCertificate(student):
     else:
         #rank holder
         w,h = draw.textsize(student[0],font)
-        raw.text(xy = (650,600),text=student[0],fill=color,font=font)
+        draw.text(xy = (650,600),text=student[0],fill=color,font=font)
   
     cert.save(str("img/"+student[0])+str(random.randint(1000,9999))+".png")
     
