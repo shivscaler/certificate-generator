@@ -13,14 +13,16 @@ def makeCertificate(student):
     cert = template.copy()
     draw = ImageDraw.Draw(cert)
     #name
-    w, h = draw.textsize(student[0],font)
+    nameTextLength = draw.textlength(student[0], font)
+    namexpos = cert.size[0]/2 - nameTextLength/2
+    # w, h = draw.textsize(student[0],font)
     # draw.text(xy = (960-w/2,535),text=student[0],fill=color,font=font)
     #rank
     if student[0] != "None":
         #llosr
         # draw.rectangle([(2700,1217),(1257,1076)], fill ="white") 
         # draw.rectangle([(2700,1217),(1257,1076)], fill =color) 
-        draw.text(xy = (650,600),text=student[0],fill=color,font=font)
+        draw.text(xy = (namexpos,600),text=student[0],fill=color,font=font)
         # draw.text(xy = (3500,1100),text=student[1],fill=color,font=font)
     else:
         #rank holder
