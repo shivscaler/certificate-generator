@@ -1,10 +1,14 @@
 # certificate-generator
 This is a repository for the Certificate Generator
 
+### Dependencies to look out for ! ###
+1.  Pillow package = 9.5.0
+    >python3 -m pip install Pillow==9.5.0
+
 ### How do I get set up? ###
 
 1.  Install PIP:
-    > python -m pip install --upgrade pip
+    > python3 -m pip install --upgrade pip
 
 2.  Install all the required libraries from requirements.txt file using following command:
     > pip install -r requirements.txt
@@ -28,4 +32,4 @@ This is a repository for the Certificate Generator
     in the main.py
 
 4.  Final step - > run the generator with the following command:
-    python mani.py
+    python3 main.py
